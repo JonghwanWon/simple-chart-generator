@@ -1,5 +1,11 @@
+import { Center, Heading } from '@chakra-ui/react';
+
 const Page = ({}) => {
-  return <div>Hello World</div>;
+  return (
+    <Center>
+      <Heading size="lg">HelloWorld</Heading>
+    </Center>
+  );
 };
 
 export default Page;

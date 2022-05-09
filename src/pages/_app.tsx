@@ -1,8 +1,6 @@
+import { ChakraProvider } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import { SWRConfig } from 'swr';
-
-import { fetcher } from '~/utils/fetcher';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const title = [process.env.NEXT_PUBLIC_SEO_TITLE, process.env.NEXT_PUBLIC_SEO_TITLE_TEMPLATE]
@@ -18,9 +16,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <title>{title}</title>
       </Head>
-      <SWRConfig value={{ fetcher }}>
+      <ChakraProvider resetCSS>
         <Component {...pageProps} />
-      </SWRConfig>
+      </ChakraProvider>
     </>
   );
 };
