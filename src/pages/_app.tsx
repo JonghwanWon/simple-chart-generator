@@ -4,11 +4,9 @@ import Head from 'next/head';
 import NextNProgress from 'nextjs-progressbar';
 import { ComponentProps } from 'react';
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
-  const title = [process.env.NEXT_PUBLIC_SEO_TITLE, process.env.NEXT_PUBLIC_SEO_TITLE_TEMPLATE]
-    .filter(Boolean)
-    .join(' :: ');
+import 'chart.js/auto';
 
+const MyApp = ({ Component, pageProps }: AppProps) => {
   const nProgressConfigs: ComponentProps<typeof NextNProgress> = {
     color: '#29D',
     startPosition: 0.3,
@@ -24,7 +22,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" key="httpEquiv" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <title>{title}</title>
       </Head>
       <ChakraProvider resetCSS>
         <NextNProgress {...nProgressConfigs} />
