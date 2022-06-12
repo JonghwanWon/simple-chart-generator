@@ -1,0 +1,56 @@
+{
+  "name": "simple-chart-generator",
+  "version": "0.0.1",
+  "author": "Jonghwan Won <jh.wwwon@gmail.com> (https://github.com/jonghwanwon)",
+  "license": "MIT",
+  "description": "simple-chart-generator",
+  "keywords": [
+    "nextjs",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonghwanwon/simple-chart-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonghwanwon/simple-chart-generator/issues"
+  },
+  "homepage": "https://github.com/jonghwanwon/simple-chart-generator#readme",
+  "scripts": {
+    "dev": "next dev -p ${PORT-3000}",
+    "build": "next build",
+    "start": "next start",
+    "lint": "npx next lint",
+    "eslint-fix": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "chart.js": "^3.7.1",
+    "framer-motion": "^6.3.3",
+    "nanoid": "^3.3.4",
+    "next": "^12.1.6",
+    "nextjs-progressbar": "^0.0.14",
+    "react": "18.1.0",
+    "react-chartjs-2": "^4.1.0",
+    "react-dom": "18.1.0",
+    "react-icons": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "@types/react": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.15.0",
+    "eslint-config-next": "^12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  }
+}
