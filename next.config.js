@@ -9,4 +9,5 @@ module.exports = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  pageExtensions: ['page.tsx', 'api.ts'],
 };
